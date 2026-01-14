@@ -1,3 +1,52 @@
+// Loading Screen
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader-wrapper');
+    document.body.classList.add('loading');
+
+    setTimeout(() => {
+        loader.classList.add('hidden');
+        document.body.classList.remove('loading');
+    }, 2000);
+});
+
+// Parallax Effect for Hero Section
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroSection = document.querySelector('.hero-section');
+
+    if (heroSection) {
+        const parallaxSpeed = 0.5;
+        heroSection.style.backgroundPositionY = scrolled * parallaxSpeed + 'px';
+    }
+
+    // Parallax for orbs
+    const orbs = document.querySelectorAll('.orb');
+    orbs.forEach((orb, index) => {
+        const speed = 0.3 + (index * 0.1);
+        orb.style.transform = `translateY(${scrolled * speed}px)`;
+    });
+});
+
+// Enhanced Scroll Reveal with Stagger
+const revealElements = () => {
+    const reveals = document.querySelectorAll('.hidden, .fade-in');
+
+    reveals.forEach((element, index) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            setTimeout(() => {
+                element.classList.add('show', 'visible');
+            }, index * 50); // Stagger effect
+        }
+    });
+};
+
+window.addEventListener('scroll', revealElements);
+window.addEventListener('load', revealElements);
+
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
@@ -6,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        
+
         // Animate Hamburger
         // (Simple toggle for now, can be enhanced with CSS transforms in style.css if needed)
         hamburger.classList.toggle('toggle');
@@ -56,4 +105,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Particle System for Background Effects
+    createParticles();
 });
+
+function createParticles() {
+    const particleContainer = document.querySelector('.background-glow');
+    const particleCount = 30;
+
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+
+        // Random position
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+
+        // Random size
+        const size = Math.random() * 4 + 2;
+        particle.style.width = size + 'px';
+        particle.style.height = size + 'px';
+
+        // Random animation duration
+        const duration = Math.random() * 20 + 15;
+        particle.style.animationDuration = duration + 's';
+
+        // Random delay
+        particle.style.animationDelay = Math.random() * 5 + 's';
+
+        particleContainer.appendChild(particle);
+    }
+}
