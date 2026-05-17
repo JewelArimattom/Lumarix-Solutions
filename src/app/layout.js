@@ -1,5 +1,6 @@
 import "./globals.css";
 import "./build.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Lumarix Solutions | AI Architect & Premium Web Developer",
@@ -73,7 +74,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
