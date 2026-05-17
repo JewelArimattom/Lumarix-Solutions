@@ -200,7 +200,7 @@ export default function ClientPage() {
     }, 40);
   }, []);
 
-  const tickerItems = ["Web Design", "UI/UX", "React", "Next.js", "GSAP", "SEO", "E-Commerce", "Branding", "Frontend", "Performance"];
+  const tickerItems = ["AI Workflows", "Next.js Architectures", "Automated Systems", "Custom AI Solutions", "SEO Engineering", "GSAP Animations", "Premium Web Design", "High-Performance Software", "Business Automation", "UI/UX Engineering"];
   const tickerContent = tickerItems.map((t, i) => (
     <span key={i}>{t} <span className="sep">✦</span> </span>
   ));
@@ -312,8 +312,8 @@ export default function ClientPage() {
         <div className="cta-bg"></div>
         <div className="cta-content">
           <div className="cta-header">
-            <h2 className="cta-title">LET&apos;S BUILD<br />SOMETHING GREAT</h2>
-            <p className="cta-desc">Tell me what you need. I&apos;ll turn it into a site that earns trust and drives real business.</p>
+            <h2 className="cta-title">LET&apos;S BUILD<br />THE FUTURE</h2>
+            <p className="cta-desc">Tell me what you need. I&apos;ll build an automated, high-performance digital experience that earns trust and drives measurable growth.</p>
           </div>
           <div className="cta-body">
             <div className="cta-info">
