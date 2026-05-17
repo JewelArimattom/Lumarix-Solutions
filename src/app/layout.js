@@ -19,7 +19,7 @@ export const metadata = {
     "Kerala web developer",
     "high-performance web development"
   ].join(", "),
-  authors: [{ name: "Lumarix Solutions", url: "https://lumarixsolutions.com" }],
+  authors: [{ name: "Lumarix Solutions", url: "https://www.lumarix.dev" }],
   creator: "Lumarix Solutions",
   publisher: "Lumarix Solutions",
   formatDetection: {
@@ -31,7 +31,7 @@ export const metadata = {
     title: "Lumarix Solutions | AI Architecture & Premium Web Development",
     description:
       "Transforming businesses with custom AI workflows, high-speed Next.js web apps, and cinematic, conversion-focused digital experiences.",
-    url: "https://lumarixsolutions.com/",
+    url: "https://www.lumarix.dev/",
     siteName: "Lumarix Solutions",
     locale: "en_US",
     type: "website",
