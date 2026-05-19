@@ -27,6 +27,17 @@ export const metadata = {
     address: false,
     telephone: false,
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "Lumarix Solutions | AI Architecture & Premium Web Development",
     description:
@@ -37,7 +48,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Lumarix Solutions - AI Architect & Web Developer",
@@ -49,6 +60,7 @@ export const metadata = {
     title: "Lumarix Solutions | AI Architect & Web Developer",
     description: "Premium Next.js web apps and custom AI business automations.",
     creator: "@lumarixsolutions",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
