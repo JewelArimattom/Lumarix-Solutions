@@ -3,9 +3,9 @@ import "./build.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
-  title: "Lumarix Solutions | AI Architect & Premium Web Developer",
+  title: "Lumarix Solutions | AI Automation & Premium Web Development",
   description:
-    "Premium freelance web developer and AI systems architect. Specializing in high-performance Next.js web applications, custom AI workflows, automated business systems, and conversion-optimized websites.",
+    "Premium freelance web developer and AI automation architect. I build high-performance Next.js websites, custom AI workflows, and conversion systems that generate more inquiries. Book a call to get a clear plan and quote.",
   keywords: [
     "AI workflow automation",
     "freelance web developer",
@@ -39,9 +39,9 @@ export const metadata = {
     shortcut: "/favicon.ico",
   },
   openGraph: {
-    title: "Lumarix Solutions | AI Architecture & Premium Web Development",
+    title: "Lumarix Solutions | AI Automation & Premium Web Development",
     description:
-      "Transforming businesses with custom AI workflows, high-speed Next.js web apps, and cinematic, conversion-focused digital experiences.",
+      "High-performance Next.js websites and custom AI workflows that turn visits into inquiries. Book a call to get a clear plan and quote.",
     url: "https://www.lumarix.dev/",
     siteName: "Lumarix Solutions",
     locale: "en_US",
@@ -57,8 +57,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lumarix Solutions | AI Architect & Web Developer",
-    description: "Premium Next.js web apps and custom AI business automations.",
+    title: "Lumarix Solutions | AI Automation & Web Development",
+    description: "Next.js websites and custom AI workflows that generate more inquiries. Book a call for a clear plan and quote.",
     creator: "@lumarixsolutions",
     images: ["/og-image.png"],
   },

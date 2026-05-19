@@ -248,10 +248,10 @@ export default function ClientPage() {
         <div className="hero-scan-line"></div>
         <canvas className="hero-canvas" style={{position:'absolute',inset:0,zIndex:0,pointerEvents:'none'}}></canvas>
         <div className="container" style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
-          <div className="hero-sub" style={{ transform: "translateY(20px)" }}>Freelance Web Developer & AI Architect</div>
+          <div className="hero-sub" style={{ transform: "translateY(20px)" }}>AI Automation Architect & Freelance Web Developer</div>
           <h1 className="hero-name" onMouseEnter={handleHeroHover}>{heroChars}</h1>
           <div className="hero-line"></div>
-          <p className="hero-desc" style={{ transform: "translateY(20px)" }}>I build premium, scroll-stopping websites and custom AI workflows that make clients trust you before they even pick up the phone. Specializing in high-performance Web Apps, Next.js Architectures, and Automated AI Systems designed for measurable growth.</p>
+          <p className="hero-desc" style={{ transform: "translateY(20px)" }}>I build premium, scroll-stopping websites and custom AI workflows that turn visits into inquiries. Share your goal and timeline, and I will send a clear plan and quote within 24 hours.</p>
           <div className="hero-btns" style={{ transform: "translateY(20px)" }}>
             <a className="btn btn-primary" href="#contact">Start a Project</a>
             <a className="btn btn-ghost" href="#process">See My Process</a>
@@ -313,7 +313,7 @@ export default function ClientPage() {
         <div className="cta-content">
           <div className="cta-header">
             <h2 className="cta-title">LET&apos;S BUILD<br />THE FUTURE</h2>
-            <p className="cta-desc">Tell me what you need. I&apos;ll build an automated, high-performance digital experience that earns trust and drives measurable growth.</p>
+            <p className="cta-desc">Tell me your goal and timeline. I will reply within 24 hours with a clear plan, scope, and quote.</p>
           </div>
           <div className="cta-body">
             <div className="cta-info">
